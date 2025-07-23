@@ -15,8 +15,12 @@ body {
     align-items: center;
     height: 100vh;
 }
+.fadein {
+    opacity: 0; /* start with full transparency */
+    transition: opacity 2s ease-out; /* smoothly change the property over a given duration (2 seconds), and type of easing function */
+}
 </style>
-<div class="text-center">
+<div class="text-center fadein">
   <h1 class="mt-5"><span class="badge badge-dark font-weight-normal">404</span></h1>
   <h1 class="display-1 mt-4 mb-4">Page not found!</h1>
   <p>The page you are looking for does not exist. Please use the search bar from the bottom left or visit our <a href="{{site.baseurl}}/">homepage</a>!</p>
